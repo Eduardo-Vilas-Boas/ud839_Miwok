@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@color/tan_background"
+    android:minHeight="@dimen/list_item_height">
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="@dimen/list_item_height"
+        android:layout_height="@dimen/list_item_height"
+        android:contentDescription="@string/miwok_image" />
+
+    <LinearLayout
+        android:id="@+id/text_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_item_height"
+        android:orientation="vertical"
+        android:layout_toEndOf="@id/image_view"
+        android:paddingStart="16dp"
+        android:gravity="center_vertical"
+        tools:ignore="RtlSymmetry">
+
+        <TextView
+            android:id="@+id/miwok_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            tools:text="lutti" />
+        <TextView
+            android:id="@+id/default_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@android:color/white"
+            tools:text="one" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/image_view_play"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="16dp"
+        android:contentDescription="@string/play_button_image"
+        android:src="@drawable/ic_play_arrow" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?android:attr/selectableItemBackground"/>
+</RelativeLayout>
