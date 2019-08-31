@@ -16,7 +16,7 @@
             android:id="@+id/numbers"
             style="@style/CategoryStyle"
             android:background="?android:attr/selectableItemBackground"
-            android:text="@string/category_numbers"  />
+            android:text="@string/category_numbers"   />
     </FrameLayout>
 
     <!-- Family category -->
